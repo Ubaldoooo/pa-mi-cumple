@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #be7195, #d4d4d4);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0d47a1;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .gift-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .gift-list li {
+    background: rgb(241, 213, 213);
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1em;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .whatsapp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128C7E;
+  }
+  
+  /* Globos animados */
+  .globos::before, .globos::after {
+    content: "🎈🎈🎈";
+    font-size: 8em;
+    position: fixed;
+    width: 200%;
+    animation: flotar 6s infinite linear;
+    left: 0;
+    text-align: center;
+    opacity: 0.6;
+  }
+  
+  .globos::after {
+    animation-delay: 3s;
+  }
+  
+  @keyframes flotar {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -10%;
+    }
+  }
